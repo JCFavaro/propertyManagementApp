@@ -1,0 +1,34 @@
+<div class="container vh-90">
+    <div class="row pt-3">
+        <% for (let stay of stays) { %>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
+                <div class="card stayCards p-2 mt-2 mb-2">
+                    <a class="fas fa-times-circle text-danger align-self-end mr-2" name="id" role="button"
+                       href="/deleteStay/<%- stay.id %>"></a>
+                    <div class="card-body p-0">
+                        <h5 class="pb-2 text-center border-bottom border-success"><%- stay.guest.fullName %> </h5>
+                        <div class="row">
+                            <div class="col-7">
+                                <p class="border-bottom border-dark">From: </p>
+                                <p class="border-bottom border-dark">To: </p>
+                                <p class="border-bottom border-dark">Method of payment: </p>
+                                <p class="border-bottom border-dark">Value per day: </p>
+                                <p class="border-bottom border-dark">Total value: </p>
+                                <p class="border-bottom border-dark">20% Advance Deposit: </p>
+                            </div>
+                            <div class="col-5 font-weight-bold d-flex flex-column align-items-start pl-0">
+                                <p><%- stay.initialDate.split('T')[0] %></p>
+                                <p><%- stay.finalDate.split('T')[0] %></p>
+                                <p><%- stay.paymentMethod %></p>
+                                <p><%- stay.valuePerDay %></p>
+                                <p><%- stay.totalValue %></p>
+                                <p><%- stay.downPayment %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+

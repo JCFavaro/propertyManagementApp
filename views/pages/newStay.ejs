@@ -1,8 +1,8 @@
-<form id="formLogin" method="POST" action="/newRental/<%- req.params.id %>"
+<form id="formLogin" method="POST" action="/newStay/<%- req.params.id %>"
       class="d-flex flex-column text-center justify-content-center align-items-center pt-5 pb-5">
 
     <div class="form-group w-25">
-        <label for="guestID"><b>Cliente</b></label>
+        <label for="guestID"><b>Customer</b></label>
         <br>
         <select name="guestID" id="guestID">
             <% for (let customer of customers){ %>
@@ -12,30 +12,30 @@
     </div>
 
     <div class="form-group w-25">
-        <label for="initialDate"><b>Fecha de inicio</b></label>
+        <label for="initialDate"><b>Init Date</b></label>
         <input type="date" class="form-control" id="initialDate" name="initialDate">
     </div>
 
     <div class="form-group w-25">
-        <label for="finalDate"><b>Fecha de fin</b></label>
+        <label for="finalDate"><b>Final Date</b></label>
         <input type="date" class="form-control" id="finalDate" name="finalDate">
     </div>
 
     <div class="form-group w-25">
-        <label for="paymentMethod"><b>Forma de pago</b></label>
+        <label for="paymentMethod"><b>Method of Payment</b></label>
         <br>
         <select name="paymentMethod">
-            <option value="Efectivo">Efectivo</option>
-            <option value="Crédito">Crédito</option>
-            <option value="Débito">Débito</option>
+            <option value="Efectivo">Cash</option>
+            <option value="Crédito">Credit</option>
+            <option value="Débito">Debit</option>
         </select>
     </div>
 
     <div class="form-group w-25">
-        <label for="valuePerDay"><b>Valor por día</b></label>
+        <label for="valuePerDay"><b>Value Per Day</b></label>
         <input type="number" class="form-control" id="valuePerDay" name="valuePerDay">
     </div>
 
-    <button type="submit" class="btn-lg btn-success w-25">Crear</button>
+    <button type="submit" class="btn-lg btn-success w-25">Create</button>
 
 </form>

@@ -19,14 +19,14 @@ module.exports.policies = {
 
 
   '*': true,
-  AlojamientoController: {
+  AccommodationController: {
     'home': true,
     '*': 'isLoggedIn',
   },
   CustomerController: {
     '*': 'isLoggedIn',
   },
-  EstadiaController:{
+  StayController:{
     '*': 'isLoggedIn',
   },
 };

@@ -9,12 +9,12 @@ module.exports = {
 
   //Controlador de LOGIN
   login: async function (req, res) { //Debe ser asincrona para realizar los awaits. (trabajar en 2do plano)
-    let user = req.param('user'); // Lo que mandan al escribir en los campos user y password
+    let username = req.param('user'); // Lo que mandan al escribir en los campos user y password
     let password = req.param('password');
 
     let found = await User.findOne({ //Encontrar un usuario con los datos ingresados.
-      username: user,
-      password: password
+      username,
+      password
     });
 
     if (found) {

@@ -2,7 +2,7 @@
 POST http://localhost:1337/user
 Content-Type: application/x-www-form-urlencoded
 
-username=daniel&password=daf332
+username=admin&password=admin
 
 ###
 

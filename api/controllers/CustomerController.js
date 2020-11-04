@@ -7,7 +7,7 @@
 
 module.exports = {
   customers: async function (req, res) {
-    let customers = await Customer.find({}).populate('estadias');
+    let customers = await Customer.find({}).populate('stays');
     res.view('pages/customer', {customers: customers});
   },
 
@@ -18,10 +18,10 @@ module.exports = {
     let licensePlate = req.param('licensePlate');
 
     let customers = await Customer.create({
-      fullName: fullName,
-      city: city,
-      members: members,
-      licensePlate: licensePlate,
+      fullName,
+      city,
+      members,
+      licensePlate,
     });
 
     res.redirect('/customer');

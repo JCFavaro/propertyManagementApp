@@ -1,5 +1,5 @@
 /**
- * EstadiaController
+ * StayController
  *
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
@@ -7,17 +7,17 @@
 
 
 module.exports = {
-  rentals: async function (req, res) {
+  stays: async function (req, res) {
     //If alojamientos or customers are deleted
-    await Estadia.destroy({guest: null});
-    await Estadia.destroy({rent: null});
+    await Stay.destroy({guest: null});
+    await Stay.destroy({stay: null});
 
-    let estadias = await Estadia.find({rent: req.params.id}).populate('guest').sort('initialDate ASC');
+    let stays = await Stay.find({stay: req.params.id}).populate('guest').sort('initialDate ASC');
 
-    res.view('pages/rental', {estadias: estadias});
+    res.view('pages/stay', {stays: stays});
   },
 
-  newRental: async function (req, res) {
+  newStay: async function (req, res) {
     let idUrl = req.param('id');
 
     let initialDate = new Date(req.param('initialDate'));
@@ -28,32 +28,32 @@ module.exports = {
     let valuePerDay = req.param('valuePerDay');
     let totalValue = valuePerDay * days;
     let downPayment = (totalValue * 20) / 100;
-    let alojamiento = req.params.id;
+    let accommodation = req.params.id;
     let guestID = req.param('guestID');
 
-    let rentals = await Estadia.create({
-      initialDate: initialDate,
-      finalDate: finalDate,
-      paymentMethod: paymentMethod,
-      valuePerDay: valuePerDay,
-      totalValue: totalValue,
-      downPayment: downPayment,
-      rent: alojamiento,
+    let stays = await Stay.create({
+      initialDate,
+      finalDate,
+      paymentMethod,
+      valuePerDay,
+      totalValue,
+      downPayment,
+      stay: accommodation,
       guest: guestID
     });
 
-    res.redirect('/rental/' + idUrl);
+    res.redirect('/stay/' + idUrl);
   },
 
-  newRentalInvisible: async function (req, res) {
+  newStayInvisible: async function (req, res) {
     let customers = await Customer.find({});
-    res.view('pages/newRental', {customers: customers});
+    res.view('pages/newStay', {customers: customers});
   },
 
-  deleteEstadia: async function (req, res) {
-    let deleteEstadia = req.param('id');
+  deleteStay: async function (req, res) {
+    let deleteStay = req.param('id');
 
-    await Estadia.destroy({id: deleteEstadia});
+    await Stay.destroy({id: deleteStay});
 
     res.redirect('/');
   }

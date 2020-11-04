@@ -17,7 +17,7 @@ module.exports.routes = {
    * `assets` directory)                                                      *
    *                                                                          *
    ***************************************************************************/
-  '/': 'AlojamientoController.home',
+  '/': 'AccommodationController.home',
   //Usuarios
   'GET /login': {
     view: 'pages/login',
@@ -26,9 +26,9 @@ module.exports.routes = {
   '/logout': 'UserController.logout',
 
   //Alojamientos
-  'GET /newAlojamiento': 'AlojamientoController.newAlojamientoInvisible',
-  'POST /newAlojamiento': 'AlojamientoController.newAlojamiento',
-  '/deleteAlojamiento/:id': 'AlojamientoController.deleteAlojamiento',
+  'GET /newAlojamiento': 'AccommodationController.newAccommodationInvisible',
+  'POST /newAccommodation': 'AccommodationController.newAccommodation',
+  '/deleteAccommodation/:id': 'AccommodationController.deleteAccommodation',
 
   //Customers
   'GET /newCustomer': 'CustomerController.newCustomerInvisible',
@@ -37,10 +37,10 @@ module.exports.routes = {
   '/deleteCustomer/:id': 'CustomerController.deleteCustomer',
 
   //Estadias
-  'GET /newRental/:id': 'EstadiaController.newRentalInvisible',
-  'POST /newRental/:id': 'EstadiaController.newRental',
-  'GET /rental/:id': 'EstadiaController.rentals',
-  '/deleteEstadia/:id': 'EstadiaController.deleteEstadia',
+  'GET /newStay/:id': 'StayController.newStayInvisible',
+  'POST /newStay/:id': 'StayController.newStay',
+  'GET /stay/:id': 'StayController.stays',
+  '/deleteStay/:id': 'StayController.deleteStay',
   /***************************************************************************
    *                                                                          *
    * More custom routes here...                                               *

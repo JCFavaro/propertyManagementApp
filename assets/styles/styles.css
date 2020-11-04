@@ -73,6 +73,7 @@ h1,
 .homeCards {
     background-color: #1e273a !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 15rem !important;
 }
 
 .card img {
@@ -98,19 +99,19 @@ h1,
 
 
 /**
-    Rental
+    Stay
  */
-.rentalCards {
+.stayCards {
     background-color: #1e273a !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 30px !important;
 }
 
-.rentalCards h4{
+.stayCards  h4{
     color: #e9ffd8 !important;
 }
 
-.rentalCards p{
+.stayCards  p{
     color: #d2d5da !important;
 }
 

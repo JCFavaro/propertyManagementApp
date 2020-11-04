@@ -1,21 +1,20 @@
 <div class="container text-center vh-90">
 
-    <h1 class="display-4 p-3 border-bottom border-white">Alquileres del Valle</h1>
+    <h1 class="display-4 p-3 border-bottom border-white">Company Name</h1>
 
     <div id="homepage" class="row pt-3">
         <% if (req.session.user){ %>
-            <% for (let alojamiento of alojamientos) { %>
+            <% for (let accommodation of accommodations) { %>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3 d-flex justify-content-center">
                     <div class="card homeCards my-2 p-2">
                         <a class="fas fa-times-circle text-danger align-self-end" role="button"
-                           href="/deleteAlojamiento/<%- alojamiento.id %>"></a>
-                        <h2><%- alojamiento.name %> </h2>
-                        <img class="card-img-top align-self-center" src="/images/<%= alojamiento.image %>">
+                           href="/deleteAccommodation/<%- accommodation.id %>"></a>
+                        <h2><%- accommodation.name %> </h2>
+                        <img class="card-img-top align-self-center" src="/images/<%= accommodation.image %>">
                         <div class="card-body align-middle d-flex flex-column align-items-center">
-                            <a class="btn btn-dark text-white" role="button" href="rental/<%- alojamiento.id %>">Ver
-                                estadías</a>
-                            <a class="btn btn-dark text-white mt-2" href="/newRental/<%- alojamiento.id %>"
-                               role="button">Ingresar nueva estadía</a>
+                            <a class="btn btn-dark text-white" role="button" href="/stay/<%- accommodation.id %>">Show Stays</a>
+                            <a class="btn btn-dark text-white mt-2" href="/newStay/<%- accommodation.id %>"
+                               role="button">Add New Stay</a>
                         </div>
                     </div>
                 </div>
@@ -24,9 +23,9 @@
     </div>
     <% } else { %>
         <div class="pt-2 mt-5 w-100">
-            <h2 class="pb-5">Inicia sesión para ver el contenido</h2>
+            <h2 class="pb-5">Login to view content</h2>
 
-            <a href="/login" type="submit" class="btn btn-dark btn-lg pt-2">Iniciar Sesión</a>
+            <a href="/login" type="submit" class="btn btn-dark btn-lg pt-2">Login</a>
         </div>
     <% } %>
 
