@@ -13,17 +13,28 @@ module.exports = {
     },
 
     newAccommodation: async function (req, res) {
-        let name = req.param('nombre');
-        let capacity = req.param('capacidad');
+        let name = req.param('name');
+        let capacity = req.param('capacity');
         let garage = req.param('garage');
-        let address = req.param('direccion');
+        let address = req.param('address');
+        let type = req.param('type');
+        let image;
+
+        if(type === 'house') {
+            image = 'house.png';
+        } else if(type === 'apartment') {
+            image = 'apartment.png';
+        } else {
+            image = 'cabin.png';
+        }
 
         let accommodations = await Accommodation.create({
             name,
             capacity,
             garage,
             address,
-            image: 'default.png',
+            type,
+            image,
             owner: req.session.user.id
         });
         res.redirect('/');

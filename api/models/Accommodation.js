@@ -28,6 +28,10 @@ module.exports = {
             type: 'string',
             required: true,
         },
+        type: {
+            type: 'string',
+            required: true,
+        },
         image: {
             type: 'string',
             required: false,
