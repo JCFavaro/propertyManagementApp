@@ -1,8 +1,8 @@
 {
-  "name": "segundo-parcial-favaro",
+  "name": "property-management-app",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Property Management APP",
   "keywords": [],
   "dependencies": {
     "@sailshq/connect-redis": "^3.2.1",
@@ -27,9 +27,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jfavaro/segundo-parcial-favaro.git"
+    "url": "git://github.com/JCFavaro/PropertyManagementApp"
   },
-  "author": "jfavaro",
+  "author": "Favaro Juan Cruz",
   "license": "",
   "engines": {
     "node": "^12.17"
