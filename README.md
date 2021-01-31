@@ -27,3 +27,5 @@ Bootstrap v4.5 framework was used for the frontend.
 - [X] https://stark-bayou-71728.herokuapp.com/   USER: admin PASSWORD: admin 
 
 Any suggestions would be highly valued and warmly welcomed. 
+---
+⌨️ with ❤️ by [Favaro Juan Cruz](https://github.com/JCFavaro) 😊
