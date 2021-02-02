@@ -12,15 +12,21 @@
 
 ## Built with 🛠️
 
-- This application has been developed using Sails.JS v1.x framework and using their ORM to take advantage of the local database.
+- [Sails.JS v1.x framework](https://sailsjs.com/)
 
-- Applying a MVC architecture, a clean UI, CRUD functionality, authentication, a local database and solving a business problem. 
+- Executing Sails.JS thanks to [NodeJS](https://nodejs.org/en/) 
 
-- Also, this app use a policy to prevent that any who isn't loaded do changes.
+- [Bootstrap v4.5 framework](https://getbootstrap.com/) for the frontend.
 
-- Bootstrap v4.5 framework was used for the frontend.
+## 📋
 
-Executing Sails.JS thanks to NodeJS.
+- Model-View-Controller (MVC) architecture
+- Clean UI 
+- CRUD operations 
+- Authentication 
+- Local database thanks to Sails ORM called [Waterline](https://github.com/balderdashy/waterline)
+- Solving a business problem. 
+- Also, this app use a policy to prevent that any who isn't loaded make changes.
 
 ## Deploy 📦
 
