@@ -14,13 +14,13 @@
 
 - This application has been developed using Sails.JS v1.x framework and using their ORM to take advantage of the local database.
 
-- Applying also a MVC architecture, a clean UI, CRUD functionality, authentication, a local database and solving a business problem. 
+- Applying a MVC architecture, a clean UI, CRUD functionality, authentication, a local database and solving a business problem. 
 
 - Also, this app use a policy to prevent that any who isn't loaded do changes.
 
-Executing Sails.JS thanks to NodeJS.
+- Bootstrap v4.5 framework was used for the frontend.
 
-Bootstrap v4.5 framework was used for the frontend.
+Executing Sails.JS thanks to NodeJS.
 
 ## Deploy 📦
 
