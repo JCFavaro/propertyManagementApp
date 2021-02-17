@@ -24,7 +24,7 @@
 - Clean UI 
 - CRUD operations 
 - Authentication 
-- Local database thanks to Sails ORM called [Waterline](https://github.com/balderdashy/waterline)
+- Handling models thanks to Sails ORM called [Waterline](https://github.com/balderdashy/waterline)
 - Solving a business problem. 
 - Also, this app use a policy to prevent that any who isn't loaded make changes.
 
