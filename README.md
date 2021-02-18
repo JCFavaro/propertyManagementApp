@@ -34,4 +34,4 @@
 
 Any suggestions would be highly valued and warmly welcomed. 
 ---
-⌨️ with ❤️ by [Favaro Juan Cruz](https://github.com/JCFavaro) 😊
+⌨️ with ❤️ by [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
