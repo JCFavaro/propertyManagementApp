@@ -20,7 +20,7 @@ module.exports.policies = {
 
   '*': true,
   AccommodationController: {
-    'home': true,
+    'home': 'isLoggedIn',
     '*': 'isLoggedIn',
   },
   CustomerController: {
