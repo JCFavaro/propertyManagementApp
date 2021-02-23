@@ -7,6 +7,18 @@
 
 module.exports = {
 
+  signup: async function (req, res) {
+    let username = req.param('user');
+    let password = req.param('password');
+
+    let user = await User.create({
+      username,
+      password
+    });
+
+    res.redirect('/');
+  },
+
   //Controlador de LOGIN
   login: async function (req, res) { //Debe ser asincrona para realizar los awaits. (trabajar en 2do plano)
     let username = req.param('user'); // Lo que mandan al escribir en los campos user y password

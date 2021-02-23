@@ -1,5 +1,7 @@
 # Property Management
 
+### If you clone this repository, need to run "npm install" in terminal
+
 ## Description 🚀
 
 **Application that facilitates:**
@@ -14,24 +16,24 @@
 
 - [Sails.JS v1.x framework](https://sailsjs.com/)
 
-- Executing Sails.JS thanks to [NodeJS](https://nodejs.org/en/) 
+- Executing Sails.JS thanks to [NodeJS](https://nodejs.org/en/)
 
 - [Bootstrap v4.5 framework](https://getbootstrap.com/) for the frontend.
 
 ## 📋
 
 - Model-View-Controller (MVC) architecture
-- Clean UI 
-- CRUD operations 
-- Authentication 
+- Clean UI
+- CRUD operations
+- Authentication
 - Handling models thanks to Sails ORM called [Waterline](https://github.com/balderdashy/waterline)
-- Solving a business problem. 
+- Solving a business problem.
 - Also, this app use a policy to prevent that any who isn't loaded make changes.
 
 ## Deploy 📦
 
-- [X] https://stark-bayou-71728.herokuapp.com/   USER: admin PASSWORD: admin 
+- [X] https://stark-bayou-71728.herokuapp.com/   USER: admin PASSWORD: admin
 
-Any suggestions would be highly valued and warmly welcomed. 
+Any suggestions would be highly valued and warmly welcomed.
 ---
 ⌨️ with ❤️ by [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
