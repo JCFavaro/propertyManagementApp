@@ -32,7 +32,7 @@
 
 ## Deploy 📦
 
-- [X] https://stark-bayou-71728.herokuapp.com/   USER: admin PASSWORD: admin
+- [X] https://propertymanagementsails.herokuapp.com/login
 
 Any suggestions would be highly valued and warmly welcomed.
 ---
