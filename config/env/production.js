@@ -251,7 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
      onlyAllowOrigins: [
-       'https://arcane-ocean-87667.herokuapp.com/',
+       'https://propertymanagementsails.herokuapp.com/',
      ],
 
 
